@@ -1,0 +1,6 @@
+[ClassVersion("1.0.0"), FriendlyName("ASI_cPath")]
+class ASI_cPath: OMI_BaseResource
+{
+	[Key, Description("Value to be included or excluded in the 'Path' environment variable.")] String Path;
+	[Write, ValueMap{"Present", "Absent"}, Values{"Present", "Absent"}] String Ensure;
+};
